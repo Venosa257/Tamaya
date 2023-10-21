@@ -1,5 +1,5 @@
 
-<div class="card" style="margin: auto; width: 30%; background-color: grey">
+<div class="card" style="margin: auto; width: 30%; background-color: grey; ">
     {{-- <link href="{{ asset("/public/css/file.css")}}" rel="stylesheet" type="text/css"/> --}}
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
