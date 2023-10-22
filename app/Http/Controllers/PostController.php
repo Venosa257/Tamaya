@@ -2,8 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use App\Models\Post;
+use App\Models\Answer;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
 
 class PostController extends Controller
 {
@@ -12,8 +17,10 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post::all();
-        return view('post.index',compact('posts'));
+        $posts = Post::latest()->get();
+        $categories = Category::all();
+       
+        return view('post.index',compact('posts','categories'));
     }
 
     /**
@@ -29,7 +36,32 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validator = Validator::make($request->all(),[
+            'title' => 'required|max:255',
+            'category_id' => 'required:not_in:',
+            'image' => 'image|file',
+            'body' => 'required'
+        ]);
+       
+
+        if ($validator->fails()) {
+            return redirect('/posts')->withErrors($validator)->withInput();
+        }
+        
+        $validatedData = $validator->getData();
+
+        if($request->file('image')) {
+            $validatedData['image'] = $request->file('image')->store('post-images');
+        }
+
+        $validatedData['user_id'] = auth()->user()->id;
+        $validatedData['body'] = strip_tags($request->body);
+        unset($validatedData['_token']);
+        
+        Post::create($validatedData);
+
+
+        return redirect('/posts')->with('success', 'New post has been added!');
     }
 
     /**

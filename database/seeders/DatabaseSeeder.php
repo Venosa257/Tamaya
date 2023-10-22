@@ -6,6 +6,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use App\Models\Post;
 use App\Models\User;
+use App\Models\Category;
 
 class DatabaseSeeder extends Seeder
 {
@@ -16,12 +17,23 @@ class DatabaseSeeder extends Seeder
     {
         // \App\Models\User::factory(10)->create();
 
-        // User::factory()->create([
-        //     'name' => 'Venosa',
-        //     'email' => 'venosa@gmail.com',
-        //     'password' => bcrypt('12345678')
-        // ]);
+        User::factory()->create([
+            'name' => 'Venosa',
+            'email' => 'venosa@gmail.com',
+            'password' => bcrypt('12345678')
+        ]);
 
-        Post::factory(20)->create();
+        User::factory(4)->create();
+        Post::factory(10)->create();
+        
+        Category::create([
+            'name' => 'Programming',
+        ]);
+        Category::create([
+            'name' => 'Design',
+        ]);
+        Category::create([
+            'name' => 'Comic',
+        ]);
     }
 }

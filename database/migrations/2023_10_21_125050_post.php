@@ -14,11 +14,10 @@ return new class extends Migration
         Schema::create('post', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('slug')->unique();
             $table->string('image')->nullable();
-            $table->string('excerpt');
             $table->text('body');
             $table->foreignId('user_id');
+            $table->foreignId('category_id');
             $table->timestamps();
         });
     }

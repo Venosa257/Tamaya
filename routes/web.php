@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AnswerController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
@@ -17,8 +18,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::resource('posts', PostController::class);
-
+Route::resource('posts', PostController::class)->middleware('auth');
+Route::post('/answer', [AnswerController::class,'store']);
 
 Route::get('/login',[LoginController::class,'index'])->middleware('guest')->name('login');
 Route::post('/login', [LoginController::class,'authenticate']);
