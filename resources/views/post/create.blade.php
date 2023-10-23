@@ -9,7 +9,7 @@
         <form action="{{ route('posts.store') }}" method="post" enctype="multipart/form-data">
           @csrf
           <div class="mb-3">
-            <label for="title" class="form-label">Title</label>
+            <label for="title" class="form-label h5">Title</label>
             <input type="text" class="form-control" id="title" placeholder="Title" name="title" required>
           </div>
 
