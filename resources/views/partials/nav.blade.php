@@ -2,7 +2,8 @@
     <!-- Container wrapper -->
     <div class="container-fluid">
       <!-- Navbar brand -->
-      <a class="navbar-brand" href="#">Navbar</a>
+      {{-- <a class="navbar-brand" href="#">Navbar</a> --}}
+      <img src="img/tamaya2.png" style="width: 5%" alt="">
 
       <!-- Toggle button -->
       <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
