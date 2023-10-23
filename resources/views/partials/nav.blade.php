@@ -1,10 +1,20 @@
 <nav class="navbar navbar-expand-lg navbar-dark gradient-custom">
     <!-- Container wrapper -->
     <div class="container-fluid">
-      <!-- Navbar brand -->
-      {{-- <a class="navbar-brand" href="#">Navbar</a> --}}
-      <img src="img/tamaya2.png" style="width: 5%" alt="">
+        <a class="navbar-brand" href="/">Tamaya</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Categories</a>
+            </li>
 
+<<<<<<< HEAD
       <!-- Toggle button -->
       <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
         data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -55,6 +65,10 @@
                 <i class="far fa-envelope fa-lg mb-1"></i>
                 <span class="badge rounded-pill badge-notification bg-dark">11</span>
               </div>
+=======
+          {{-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+>>>>>>> 9bdf8f32fc763dd44ce60eed084087a721e3b636
               Dropdown
             </a>
             <!-- Dropdown menu -->
