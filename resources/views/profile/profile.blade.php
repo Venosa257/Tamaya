@@ -3,7 +3,7 @@
 
 <div class="position-relative">
     <div class="">
-        <div class="card_1 mx-auto p-2 m-4 gradient-custom">
+        <div class="card_1 mx-auto p-2 m-4">
             <div class="text_1 text-start">
                 <p class="fs-2 fw-semibold m-0">Ragil Prasetya Putra Bima</p>
                 <p class="fs-5 light m-0">Tambahkan kredensial profil</p>
@@ -30,12 +30,23 @@
 
                 </ul>
               </div>
+             <div class="zz">
+                <p class="fs-5 fw-semibold mt-2 ">0 Pertanyaan</p>
+             </div>
+              <hr>
               <div class="card-body">
-                <h5 class="card_1-title">Special title treatment</h5>
-                <p class="card_1-text">With supporting text below as a natural lead-in to additional content.</p>
+                <h5 class="card_1-title"></h5>
+                <p class="card_1-text"></p>
                 <a href="#" class="btn btn-primary">Go somewhere</a>
               </div>
-            </div>
         </div>
+    </div>
+    <div class="">
+        <div class="card_2 mx-auto">
+
+        </div>
+    </div>
 </div>
+
+
 @endsection
