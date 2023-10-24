@@ -10,7 +10,7 @@
                 <p class="fw-5 light ">0 Follower • 0 Following</p>
             </div>
             <div class="photo mt-1">
-                <img src="img/ishimi.jpeg" class="rounded-circle" style="width: 18%" alt="">
+                <img src="img/blank-profile.png" class="rounded-circle" style="width: 18%" alt="">
 
             </div>
             <div class="text-fixed mt-3 ps-3">

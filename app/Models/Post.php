@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\User;
 use App\Models\Category;
+use App\Models\Like;
 
 class Post extends Model
 {
@@ -33,5 +34,9 @@ class Post extends Model
 
     public function answers() {
         return $this->hasMany(Answer::class);
+    }
+
+    public function likes() {
+        return $this->hasMany(Like::class);
     }
 }

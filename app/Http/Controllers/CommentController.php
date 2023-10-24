@@ -34,7 +34,7 @@ class CommentController extends Controller
             "comment" => $request->comment,
         ]);
 
-        return redirect("/posts/{{$request->post_id}}")->with("success","");
+        return redirect("/posts/{$request->post_id}")->with("success","");
     }
 
     /**

@@ -25,6 +25,19 @@
     padding:  0 15px;
     border-radius: 30px;
 }
+.like {
+    padding:  0 15px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    background-color: #fff;
+   
+}
+.like:hover {
+    background-color: #f7f7f7;
+    padding:  0 15px;
+    border-radius: 30px;
+}
 
 .hide-comment {
     display: none !important;

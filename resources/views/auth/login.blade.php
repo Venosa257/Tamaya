@@ -21,7 +21,7 @@
                 </div>
                 
                 <p class="text-center">Don't have an account? 
-                    <a href="/register">Sign in</a>
+                    <a href="/register">Register now</a>
                 </p>
             </form>
             

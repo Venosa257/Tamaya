@@ -19,8 +19,8 @@ class PostController extends Controller
     {
         $posts = Post::latest()->paginate(5);
         $categories = Category::all();
-       
-        return view('post.index',compact('posts','categories'));
+        $active = 'posts';
+        return view('post.index',compact('posts','categories','active'));
     }
 
     /**
@@ -69,8 +69,8 @@ class PostController extends Controller
      */
     public function show(Post $post)
     {
-        
-        return view('post.show',compact('post'));
+        $active = 'posts';
+        return view('post.show',compact('post','active'));
     }
 
     /**
