@@ -30,7 +30,7 @@
     cursor: pointer;
     border: 0;
     background-color: #fff;
-   
+
 }
 .like:hover {
     background-color: #f7f7f7;
@@ -50,15 +50,7 @@
 }
 
 
-    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-        rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
 
-    /* Chrome 10-25, Safari 5.1-6 */
-    /* background: -webkit-linear-gradient(to right, rgba(196, 113, 245, 1), rgba(250, 113, 205, 1));
-
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+
-    background: linear-gradient(to right, rgba(196, 113, 245, 1), rgba(250, 113, 205, 1)) */
 
 
 .card_1 {
@@ -68,9 +60,8 @@
     height: 500px;
     border-radius: 5%;
     background: white;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+
 
     /* background: rgb(196, 113, 245, 1), rgb(250, 113, 205, 1); */
 
@@ -97,12 +88,12 @@
     width: 400px;
     height: 500px;
     border-radius: 5%;
-    background: white;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    background: rgb(255, 255, 255);
+
+
 
 }
+
 
 .gradient-custom {
     background: greenyellow;
@@ -111,4 +102,11 @@
 .line {
     border-bottom: 1px solid black; /* 1px solid black creates a 1-pixel thick black line */
   }
+
+
+.custom-nav{
+    position: fixed;
+    right: 50%;
+}
+
 
