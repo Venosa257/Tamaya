@@ -10,14 +10,14 @@
 
 
       </div>
-      <ul class="navbar-nav ms-auto ">
+      <ul class="navbar-nav ms-auto custom-nav">
       @auth
         <li class="nav-item dropdown ms-auto">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Welcome, {{ auth()->user()->name }}
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="/posts">Profile</a></li>
+            <li><a class="dropdown-item" href="/profile">Profile</a></li>
             <li><hr class="dropdown-divider"></li>
             <li>
               <form action="/logout" method="post">
@@ -28,6 +28,9 @@
             </li>
       </ul>
       </li>
+    <div class="">
+        <img src="img/blank-profile.png" class="rounded-circle" style="width: 5%;" alt="">
+    </div>
 
       @else
       <div class="navbar-nav ms-auto">

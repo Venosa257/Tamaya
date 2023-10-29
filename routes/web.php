@@ -6,7 +6,9 @@ use App\Http\Controllers\PostController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\LandingController;
 use App\Http\Controllers\LikeController;
+
 
 use Illuminate\Support\Facades\Route;
 
@@ -20,6 +22,8 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+Route::get('/' ,[LandingController::class,'landing']);
 
 Route::resource('posts', PostController::class)->middleware('auth');
 Route::post('/answer', [AnswerController::class,'store']);
