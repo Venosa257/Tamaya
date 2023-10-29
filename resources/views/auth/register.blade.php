@@ -22,19 +22,22 @@
                         <div class="invalid-feedback">{{ $message }}</div>
                     @enderror
                 </div>
-                <div class="mb-3">
-                    <label for="password" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="password" name="password" placeholder="password">
-                    @error('password')
-                        <div class="invalid-feedback">{{ $message }}</div>
-                    @enderror
-                </div>
-                <div class="mb-3">
-                    <label for="password_confirmation" class="form-label">Confirm password</label>
-                    <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" placeholder="confirm password">
-                    @error('password_confirmation')
-                        <div class="invalid-feedback">{{ $message }}</div>
-                    @enderror
+                <div class="d-flex gap-5">
+
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" placeholder="password">
+                        @error('password')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
+                    </div>
+                    <div class="mb-3">
+                        <label for="password_confirmation" class="form-label">Confirm password</label>
+                        <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" placeholder="confirm password">
+                        @error('password_confirmation')
+                            <div class="invalid-feedback">{{ $message }}</div>
+                        @enderror
+                    </div>
                 </div>
                 <div class="d-flex justify-content-center">
                     <button type="submit" class="btn btn-primary my-4 ">Register</button>
